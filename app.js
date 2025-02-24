@@ -8,6 +8,15 @@ const showDasteBandi = document.getElementById('mycol10');
 const btnCity = document.getElementById('btn-city');
 const btnDaste = document.getElementById('btn-daste');
 
+const mycol1 = document.getElementById('btn-col1');
+const mycol2 = document.getElementById('btn-col2');
+const mycol3 = document.getElementById('btn-col3');
+
+const mycol4 = document.getElementById('mycol1');
+const mycol5 = document.getElementById('mycol2');
+const mycol6 = document.getElementById('mycol3');
+
+
 btnCity.addEventListener('click', () => {
     document.getElementById('box1').style.display = 'block'
     document.getElementById('box2').style.display = 'none'
@@ -23,6 +32,48 @@ btnDaste.addEventListener('click', () => {
 })
 
 
+function closeAllMycols() {
+    mycol1.classList.remove('col-active');
+    mycol2.classList.remove('col-active');
+    mycol3.classList.remove('col-active');
+    mycol4.classList.remove('show');
+    mycol5.classList.remove('show');
+    mycol6.classList.remove('show');
+}
+
+mycol1.addEventListener('click', () => {
+    if (mycol1.classList.contains('col-active')) {
+        closeAllMycols();
+    } else {
+        closeAllMycols();
+        mycol1.classList.add('col-active');
+        mycol4.classList.add('show');
+        console.log('mooz')
+    }
+})
+
+mycol2.addEventListener('click', () => {
+    if (mycol2.classList.contains('col-active')) {
+        closeAllMycols();
+    } else {
+        closeAllMycols();
+        mycol2.classList.add('col-active');
+        mycol5.classList.add('show');
+    }
+})
+
+mycol3.addEventListener('click', () => {
+    if (mycol3.classList.contains('col-active')) {
+        closeAllMycols();
+    } else {
+        closeAllMycols();
+        mycol3.classList.add('col-active');
+        mycol6.classList.add('show');
+    }
+})
+
+
+
 if (window.outerWidth < 700) {
     signup.innerHTML = `<i class="fa fa-user" aria-hidden="true"></i>`
 } else {
@@ -36,7 +87,6 @@ window.addEventListener('resize', function () {
         signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
     }
 });
-
 
 
 
@@ -78,7 +128,6 @@ window.addEventListener('resize', function () {
 
 const boxDasteContent = boxDasteBandi.innerHTML;
 showDasteBandi.innerHTML += `${boxDasteContent}`
-console.log(boxDasteContent)
 $('#daste').on('click', function () {
     $('#mycol10').addClass('show');
     $('.overlay2').fadeIn();

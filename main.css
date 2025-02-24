@@ -242,6 +242,7 @@
 }
 
 .card-header button {
+    direction: rtl;
     margin-top: 5px;
     font-size: 0.80rem;
     padding: 7px;
@@ -256,6 +257,7 @@
 .active {
     background-color: rgba(1, 241, 233, 0.986);
 }
+
 
 
 /* Main End */
