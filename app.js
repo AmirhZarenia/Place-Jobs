@@ -1,9 +1,26 @@
 const signup = document.getElementById('login')
-const boxCity = document.getElementById('box-city')
+const boxCity = document.getElementById('box1')
 const boxMap = document.getElementById('box-map')
 const showCity = document.getElementById('mycol')
-const boxDasteBandi = document.getElementById('dastebandi-box');
-const showDasteBandi = document.getElementById('daste-bandi');
+const boxDasteBandi = document.getElementById('box2');
+const showDasteBandi = document.getElementById('mycol10');
+
+const btnCity = document.getElementById('btn-city');
+const btnDaste = document.getElementById('btn-daste');
+
+btnCity.addEventListener('click', () => {
+    document.getElementById('box1').style.display = 'block'
+    document.getElementById('box2').style.display = 'none'
+    btnCity.classList.add('active')
+    btnDaste.classList.remove('active')
+})
+
+btnDaste.addEventListener('click', () => {
+    document.getElementById('box1').style.display = 'none'
+    document.getElementById('box2').style.display = 'block'
+    btnCity.classList.remove('active')
+    btnDaste.classList.add('active')
+})
 
 
 if (window.outerWidth < 700) {
@@ -19,6 +36,8 @@ window.addEventListener('resize', function () {
         signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
     }
 });
+
+
 
 
 if (window.outerWidth < 980) {
@@ -41,8 +60,39 @@ window.addEventListener('resize', function () {
     }
 });
 
+if (window.outerWidth < 980) {
+    boxDasteBandi.style.display = 'none'
+
+} else {
+    boxDasteBandi.style.display = 'none'
+}
+
+window.addEventListener('resize', function () {
+    if (window.outerWidth < 980) {
+        boxDasteBandi.style.display = 'none'
+    } else {
+        boxDasteBandi.style.display = 'none'
+    }
+});
+
+
 const boxDasteContent = boxDasteBandi.innerHTML;
-showDasteBandi.innerHTML = `${boxDasteContent}`
+showDasteBandi.innerHTML += `${boxDasteContent}`
+console.log(boxDasteContent)
+$('#daste').on('click', function () {
+    $('#mycol10').addClass('show');
+    $('.overlay2').fadeIn();
+});
+
+$('.overlay2').on('click', function () {
+    $('#mycol10').removeClass('show');
+    $(this).fadeOut();
+});
+
+$('#btn-close').on('click', function () {
+    $('#mycol10').removeClass('show');
+    $('.overlay2').fadeOut();
+});
 
 
 
@@ -62,6 +112,7 @@ $('#btn-close').on('click', function () {
     $('#mycol').removeClass('show');
     $('.overlay').fadeOut();
 });
+
 
 
 

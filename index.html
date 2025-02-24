@@ -40,16 +40,20 @@
 
             <a href="#mycol" id="city" data-bs-toggle="collapse" class="city">شهر ها</a>
 
-            <a id="daste-bandi" class="daste-bandi"></a>
+            <a href="#mycol10" id="daste" data-bs-toggle="collapse" class="daste">دسته بندی</a>
+
 
             <a href="" id="login" class="signup"></a>
-
-
 
 
             <div class="collapse fade" id="mycol">
                 <div class="overlay"></div>
             </div>
+
+            <div class="collapse fade" id="mycol10">
+                <div class="overlay2"></div>
+            </div>
+
         </div>
     </div>
 
@@ -59,7 +63,7 @@
 
     <!-- Main -->
 
-    <section class="container-fluid mt-5">
+    <section class="container-fluid mt-2">
 
         <div class="row">
             <div id="box-city" class="col-2 box-city">
@@ -67,165 +71,196 @@
                 <div class="tab-city">
 
                     <div class="dropdown city-btn">
-                        <button class="m-3 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button id="btn-city" class="m-3 btn-table active" type="button" data-bs-toggle="dropdown">
                             شهر ها
                         </button>
-                        <div class="dropdown-menu" style="background-color: rgb(194, 190, 190);">
-                            <a href="" class="dropdown-item text-end">استان</a>
-                            <div class="dropdown-divider "></div>
-                            <a href="" class="dropdown-item text-end">شهر</a>
-                            <div class="dropdown-divider "></div>
-                            <a href="" class="dropdown-item text-end">روستا</a>
-                        </div>
                     </div>
 
 
                     <div id="dastebandi-box">
-                        <button class="mt-3 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button id="btn-daste" class="mt-3 btn-table" type="button" data-bs-toggle="dropdown">
                             دسته بندی ها
                         </button>
-                        <div class="dropdown-menu" style="background-color: rgb(194, 190, 190);">
-                            <a href="" class="dropdown-item text-end">رستوران</a>
-                            <div class="dropdown-divider "></div>
-                            <a href="" class="dropdown-item text-end">کافه</a>
-                            <div class="dropdown-divider "></div>
-                            <a href="" class="dropdown-item text-end">ورزشی</a>
-                        </div>
-
                     </div>
 
 
                 </div>
 
-                <input class="form-control w-75 me-3 input-place" type="text" placeholder="جستجوی شهر و روستا">
-                <ul class="box-city-name" style="list-style: none;">
 
-                    <a href="">
-                        <li>آذربایجان شرقی</li>
-                    </a>
+                <div id="box1" class="box1">
 
-                    <a href="">
-                        <li>آذربایجان غربی</li>
-                    </a>
+                    <input class="form-control w-75 me-3 input-place" type="text" placeholder="جستجوی شهر و روستا">
+                    <ul class="box-city-name" style="list-style: none;">
 
-                    <a href="">
-                        <li>اردبیل</li>
-                    </a>
+                        <a href="">
+                            <li>آذربایجان شرقی</li>
+                        </a>
 
-                    <a href="">
-                        <li>اصفهان</li>
-                    </a>
+                        <a href="">
+                            <li>آذربایجان غربی</li>
+                        </a>
 
-                    <a href="">
-                        <li>البرز</li>
-                    </a>
+                        <a href="">
+                            <li>اردبیل</li>
+                        </a>
 
-                    <a href="">
+                        <a href="">
+                            <li>اصفهان</li>
+                        </a>
 
-                        <li>ایلام</li>
-                    </a>
+                        <a href="">
+                            <li>البرز</li>
+                        </a>
 
-                    <a href="">
-                        <li>بوشهر</li>
-                    </a>
+                        <a href="">
 
-                    <a href="">
-                        <li>تهران</li>
-                    </a>
+                            <li>ایلام</li>
+                        </a>
 
-                    <a href="">
-                        <li>چهار محال و بختیاری</li>
-                    </a>
+                        <a href="">
+                            <li>بوشهر</li>
+                        </a>
 
-                    <a href="">
-                        <li>خراسان جنوبی</li>
-                    </a>
+                        <a href="">
+                            <li>تهران</li>
+                        </a>
 
-                    <a href="">
-                        <li>خراسان شمالی</li>
-                    </a>
+                        <a href="">
+                            <li>چهار محال و بختیاری</li>
+                        </a>
 
-                    <a href="">
-                        <li>خراسان رضوی</li>
-                    </a>
+                        <a href="">
+                            <li>خراسان جنوبی</li>
+                        </a>
+
+                        <a href="">
+                            <li>خراسان شمالی</li>
+                        </a>
+
+                        <a href="">
+                            <li>خراسان رضوی</li>
+                        </a>
 
 
-                    <a href="">
-                        <li>خوزستان</li>
-                    </a>
+                        <a href="">
+                            <li>خوزستان</li>
+                        </a>
 
-                    <a href="">
-                        <li>زنجان</li>
-                    </a>
+                        <a href="">
+                            <li>زنجان</li>
+                        </a>
 
-                    <a href="">
-                        <li>سمنان</li>
-                    </a>
+                        <a href="">
+                            <li>سمنان</li>
+                        </a>
 
-                    <a href="">
-                        <li>سیستان و بلوچستان</li>
-                    </a>
+                        <a href="">
+                            <li>سیستان و بلوچستان</li>
+                        </a>
 
-                    <a href="">
-                        <li>فارس</li>
-                    </a>
+                        <a href="">
+                            <li>فارس</li>
+                        </a>
 
-                    <a href="">
-                        <li>قزوین</li>
-                    </a>
+                        <a href="">
+                            <li>قزوین</li>
+                        </a>
 
-                    <a href="">
-                        <li>کرمان</li>
-                    </a>
+                        <a href="">
+                            <li>کرمان</li>
+                        </a>
 
-                    <a href="">
-                        <li>قم</li>
-                    </a>
+                        <a href="">
+                            <li>قم</li>
+                        </a>
 
-                    <a href="">
-                        <li>کردستان</li>
-                    </a>
+                        <a href="">
+                            <li>کردستان</li>
+                        </a>
 
-                    <a href="">
-                        <li>کرمانشاه</li>
-                    </a>
+                        <a href="">
+                            <li>کرمانشاه</li>
+                        </a>
 
-                    <a href="">
-                        <li>کهگیلویه و بویراحمد</li>
-                    </a>
+                        <a href="">
+                            <li>کهگیلویه و بویراحمد</li>
+                        </a>
 
-                    <a href="">
-                        <li>گلستان</li>
-                    </a>
+                        <a href="">
+                            <li>گلستان</li>
+                        </a>
 
-                    <a href="">
-                        <li>گیلان</li>
-                    </a>
+                        <a href="">
+                            <li>گیلان</li>
+                        </a>
 
-                    <a href="">
-                        <li>لرستان</li>
-                    </a>
+                        <a href="">
+                            <li>لرستان</li>
+                        </a>
 
-                    <a href="">
-                        <li>مازندران</li>
-                    </a>
+                        <a href="">
+                            <li>مازندران</li>
+                        </a>
 
-                    <a href="">
-                        <li>مرکزی</li>
-                    </a>
+                        <a href="">
+                            <li>مرکزی</li>
+                        </a>
 
-                    <a href="">
-                        <li>هرمزگان</li>
-                    </a>
+                        <a href="">
+                            <li>هرمزگان</li>
+                        </a>
 
-                    <a href="">
-                        <li>همدان</li>
-                    </a>
+                        <a href="">
+                            <li>همدان</li>
+                        </a>
 
-                    <a href="">
-                        <li>یزد</li>
-                    </a>
-                </ul>
+                        <a href="">
+                            <li>یزد</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+                <div id="box2" class="box2">
+
+                    <div class="accordion" id="myaco">
+                        <div class="card ">
+                            <div class="card-header">
+                                <button class=" dropdown-toggle" data-bs-toggle="collapse"
+                                    data-bs-target="#mycol2">ورزشی </button>
+                            </div>
+                            <div class="collapse" id="mycol2" data-bs-parent="#myaco">
+                                <div class="card-body">
+                                    <button>فوتبال</button>
+                                    <br>
+                                    <button>والیبال</button>
+                                    <br>
+                                    <button>شنا</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <button class="dropdown-toggle" data-bs-toggle="collapse"
+                                    data-bs-target="#mycol1">رستوران </button>
+                            </div>
+                            <div class="collapse" id="mycol1" data-bs-parent="#myaco">
+                                <div class="card-body">
+                                    <button>غذای دریای</button>
+                                    <br>
+                                    <button>شاندیز</button>
+                                    <br>
+                                    <button>پرنده آبی</button>
+                                    <br>
+                                    <button>پیتزا پینو پینو</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
             <div id="box-map" class="col-10 box-map">
                 <div id="map"></div>
