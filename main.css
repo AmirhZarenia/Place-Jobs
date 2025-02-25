@@ -230,6 +230,7 @@
 
 .card-body button {
     margin-top: 5px;
+    direction: rtl;
     font-size: 0.80rem;
     padding: 7px;
     width: 100%;
