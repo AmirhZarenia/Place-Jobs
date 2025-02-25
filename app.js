@@ -9,85 +9,38 @@ const btnCity = document.getElementById('btn-city');
 const btnDaste = document.getElementById('btn-daste');
 
 const mycol1 = document.getElementById('btn-col1');
+const btncol11 = document.getElementsByClassName('btn-col11')
+
+
 const mycol2 = document.getElementById('btn-col2');
+const btncol22 = document.getElementsByClassName('btn-col22')
+
+
 const mycol3 = document.getElementById('btn-col3');
+const btncol33 = document.getElementsByClassName('btn-col33')
 
 const mycol4 = document.getElementById('mycol1');
 const mycol5 = document.getElementById('mycol2');
 const mycol6 = document.getElementById('mycol3');
 
+const iconMycol = document.getElementById('icon-col1')
+const iconMycol2 = document.getElementById('icon-col2')
+const iconMycol3 = document.getElementById('icon-col3')
 
-btnCity.addEventListener('click', () => {
-    document.getElementById('box1').style.display = 'block'
-    document.getElementById('box2').style.display = 'none'
-    btnCity.classList.add('active')
-    btnDaste.classList.remove('active')
-})
+const colShow1 = document.getElementsByClassName('col-show1')
+const colShow2 = document.getElementsByClassName('col-show2')
+const colShow3 = document.getElementsByClassName('col-show3')
 
-btnDaste.addEventListener('click', () => {
-    document.getElementById('box1').style.display = 'none'
-    document.getElementById('box2').style.display = 'block'
-    btnCity.classList.remove('active')
-    btnDaste.classList.add('active')
-})
+const footbal = document.getElementsByClassName('footbal-show')
+const volyball = document.getElementsByClassName('volyball-show')
+const swim = document.getElementsByClassName('swim-show')
 
-
-function closeAllMycols() {
-    mycol1.classList.remove('col-active');
-    mycol2.classList.remove('col-active');
-    mycol3.classList.remove('col-active');
-    mycol4.classList.remove('show');
-    mycol5.classList.remove('show');
-    mycol6.classList.remove('show');
-}
-
-mycol1.addEventListener('click', () => {
-    if (mycol1.classList.contains('col-active')) {
-        closeAllMycols();
-    } else {
-        closeAllMycols();
-        mycol1.classList.add('col-active');
-        mycol4.classList.add('show');
-        console.log('mooz')
-    }
-})
-
-mycol2.addEventListener('click', () => {
-    if (mycol2.classList.contains('col-active')) {
-        closeAllMycols();
-    } else {
-        closeAllMycols();
-        mycol2.classList.add('col-active');
-        mycol5.classList.add('show');
-    }
-})
-
-mycol3.addEventListener('click', () => {
-    if (mycol3.classList.contains('col-active')) {
-        closeAllMycols();
-    } else {
-        closeAllMycols();
-        mycol3.classList.add('col-active');
-        mycol6.classList.add('show');
-    }
-})
-
-
-
-if (window.outerWidth < 700) {
-    signup.innerHTML = `<i class="fa fa-user" aria-hidden="true"></i>`
-} else {
-    signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
-}
-
-window.addEventListener('resize', function () {
-    if (window.outerWidth < 700) {
-        signup.innerHTML = `<i class="fa fa-user " aria-hidden="true"></i>`
-    } else {
-        signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
-    }
-});
-
+const footbalPC = document.querySelectorAll('#footbal')
+const volyballPC = document.querySelectorAll('#volyball')
+const swimPC = document.querySelectorAll('#swim')
+const showfootbalPC = document.querySelectorAll('#footbal1')
+const showvolyballPC = document.querySelectorAll('#volyball1')
+const showswimPC = document.querySelectorAll('#swim1')
 
 
 if (window.outerWidth < 980) {
@@ -163,6 +116,283 @@ $('#btn-close').on('click', function () {
 });
 
 
+showDasteBandi.addEventListener('click', function (event) {
+    if (event.target.classList.contains('btn-col1')) {
+        if (btncol11[0].classList.contains('fa-caret-down')) {
+            btncol11[0].classList.remove('fa-caret-down')
+            btncol11[0].classList.add('fa-caret-left')
+        } else {
+            btncol11[0].classList.add('fa-caret-down')
+            btncol11[0].classList.remove('fa-caret-left')
+
+            btncol22[0].classList.remove('fa-caret-down')
+            btncol22[0].classList.add('fa-caret-left')
+
+            btncol33[0].classList.remove('fa-caret-down')
+            btncol33[0].classList.add('fa-caret-left')
+
+            colShow2[0].classList.remove('show')
+            colShow3[0].classList.remove('show')
+        }
+    }
+
+    if (event.target.classList.contains('btn-col2')) {
+        if (btncol22[0].classList.contains('fa-caret-down')) {
+            btncol22[0].classList.remove('fa-caret-down')
+            btncol22[0].classList.add('fa-caret-left')
+
+
+
+        } else {
+            btncol22[0].classList.add('fa-caret-down')
+            btncol22[0].classList.remove('fa-caret-left')
+
+            btncol11[0].classList.remove('fa-caret-down')
+            btncol11[0].classList.add('fa-caret-left')
+
+            btncol33[0].classList.remove('fa-caret-down')
+            btncol33[0].classList.add('fa-caret-left')
+
+            colShow3[0].classList.remove('show')
+            colShow1[0].classList.remove('show')
+        }
+    }
+
+    if (event.target.classList.contains('btn-col3')) {
+        if (btncol33[0].classList.contains('fa-caret-down')) {
+            btncol33[0].classList.remove('fa-caret-down')
+            btncol33[0].classList.add('fa-caret-left')
+
+        } else {
+            btncol33[0].classList.add('fa-caret-down')
+            btncol33[0].classList.remove('fa-caret-left')
+
+            btncol22[0].classList.remove('fa-caret-down')
+            btncol22[0].classList.add('fa-caret-left')
+
+            btncol11[0].classList.remove('fa-caret-down')
+            btncol11[0].classList.add('fa-caret-left')
+
+            colShow1[0].classList.remove('show')
+            colShow2[0].classList.remove('show')
+        }
+    }
+
+
+    if (event.target.classList.contains('footbal')) {
+        swim[0].classList.remove('show')
+        volyball[0].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('volyball')) {
+        swim[0].classList.remove('show')
+        footbal[0].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('swim')) {
+        footbal[1].classList.remove('show')
+        volyball[1].classList.remove('show')
+    }
+
+
+    if (event.target.classList.contains('footbal')) {
+        swim[1].classList.remove('show')
+        volyball[1].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('volyball')) {
+        swim[1].classList.remove('show')
+        footbal[1].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('swim')) {
+        footbal[1].classList.remove('show')
+        volyball[1].classList.remove('show')
+    }
+
+
+    if (event.target.classList.contains('swim')) {
+        footbal[2].classList.remove('show')
+        volyball[2].classList.remove('show')
+    }
+
+
+    if (event.target.classList.contains('footbal')) {
+        swim[2].classList.remove('show')
+        volyball[2].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('volyball')) {
+        swim[2].classList.remove('show')
+        footbal[2].classList.remove('show')
+    }
+
+    if (event.target.classList.contains('swim')) {
+        footbal[2].classList.remove('show')
+        volyball[2].classList.remove('show')
+    }
+});
+
+
+
+btnCity.addEventListener('click', () => {
+    document.getElementById('box1').style.display = 'block'
+    document.getElementById('box2').style.display = 'none'
+    btnCity.classList.add('active')
+    btnDaste.classList.remove('active')
+})
+
+btnDaste.addEventListener('click', () => {
+    document.getElementById('box1').style.display = 'none'
+    document.getElementById('box2').style.display = 'block'
+    btnCity.classList.remove('active')
+    btnDaste.classList.add('active')
+})
+
+
+
+function closeAllMycols() {
+    mycol1.classList.remove('col-active');
+    mycol2.classList.remove('col-active');
+    mycol3.classList.remove('col-active');
+    mycol4.classList.remove('show');
+    mycol5.classList.remove('show');
+    mycol6.classList.remove('show');
+}
+
+
+
+mycol1.addEventListener('click', () => {
+    if (mycol1.classList.contains('col-active')) {
+        closeAllMycols();
+        iconMycol.classList.add('fa-caret-left')
+        iconMycol.classList.remove('fa-caret-down')
+    } else {
+        closeAllMycols();
+        mycol1.classList.add('col-active');
+        mycol4.classList.add('show');
+
+        iconMycol.classList.add('fa-caret-down')
+        iconMycol.classList.remove('fa-caret-left')
+
+        iconMycol2.classList.add('fa-caret-left')
+        iconMycol2.classList.remove('fa-caret-down')
+
+        iconMycol3.classList.add('fa-caret-left')
+        iconMycol3.classList.remove('fa-caret-down')
+    }
+})
+
+mycol2.addEventListener('click', () => {
+    if (mycol2.classList.contains('col-active')) {
+        closeAllMycols();
+        iconMycol2.classList.add('fa-caret-left')
+        iconMycol2.classList.remove('fa-caret-down')
+
+    } else {
+        closeAllMycols();
+        mycol2.classList.add('col-active');
+        mycol5.classList.add('show');
+
+        iconMycol2.classList.add('fa-caret-down')
+        iconMycol2.classList.remove('fa-caret-left')
+
+        iconMycol.classList.add('fa-caret-left')
+        iconMycol.classList.remove('fa-caret-down')
+
+        iconMycol3.classList.add('fa-caret-left')
+        iconMycol3.classList.remove('fa-caret-down')
+    }
+})
+
+mycol3.addEventListener('click', () => {
+    if (mycol3.classList.contains('col-active')) {
+        closeAllMycols();
+        iconMycol3.classList.add('fa-caret-left')
+        iconMycol3.classList.remove('fa-caret-down')
+    } else {
+        closeAllMycols();
+        mycol3.classList.add('col-active');
+        mycol6.classList.add('show');
+
+        iconMycol3.classList.add('fa-caret-down')
+        iconMycol3.classList.remove('fa-caret-left')
+
+        iconMycol2.classList.add('fa-caret-left')
+        iconMycol2.classList.remove('fa-caret-down')
+
+        iconMycol.classList.add('fa-caret-left')
+        iconMycol.classList.remove('fa-caret-down')
+    }
+})
+
+footbalPC[0].addEventListener('click', () => {
+    showswimPC[0].classList.remove('show')
+    showvolyballPC[0].classList.remove('show')
+})
+
+volyballPC[0].addEventListener('click', () => {
+    showswimPC[0].classList.remove('show')
+    showfootbalPC[0].classList.remove('show')
+})
+
+swimPC[0].addEventListener('click', () => {
+    showfootbalPC[0].classList.remove('show')
+    showvolyballPC[0].classList.remove('show')
+})
+
+
+
+footbalPC[1].addEventListener('click', () => {
+    showswimPC[1].classList.remove('show')
+    showvolyballPC[1].classList.remove('show')
+})
+
+volyballPC[1].addEventListener('click', () => {
+    showswimPC[1].classList.remove('show')
+    showfootbalPC[1].classList.remove('show')
+})
+
+swimPC[1].addEventListener('click', () => {
+    showfootbalPC[1].classList.remove('show')
+    showvolyballPC[1].classList.remove('show')
+})
+
+
+footbalPC[2].addEventListener('click', () => {
+    showswimPC[2].classList.remove('show')
+    showvolyballPC[2].classList.remove('show')
+})
+
+volyballPC[2].addEventListener('click', () => {
+    showswimPC[2].classList.remove('show')
+    showfootbalPC[2].classList.remove('show')
+})
+
+swimPC[2].addEventListener('click', () => {
+    showfootbalPC[2].classList.remove('show')
+    showvolyballPC[2].classList.remove('show')
+})
+
+
+
+
+if (window.outerWidth < 700) {
+    signup.innerHTML = `<i class="fa fa-user" aria-hidden="true"></i>`
+} else {
+    signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
+}
+
+window.addEventListener('resize', function () {
+    if (window.outerWidth < 700) {
+        signup.innerHTML = `<i class="fa fa-user " aria-hidden="true"></i>`
+    } else {
+        signup.innerHTML = `ورود - ثبت نام<i class="fa fa-user me-2" aria-hidden="true"></i>`
+    }
+});
+
+
+
 
 
 
@@ -184,3 +414,12 @@ fetch('/api/points/')
         });
         map.addLayer(markers);
     });
+
+// اضافه کردن دکمه به نقشه
+var mapControl = L.control({ position: 'bottomleft' });
+mapControl.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'map-control');
+    div.innerHTML = '<button id="my-button"><i class="fa fa-exchange" aria-hidden="true"></i></button>';
+    return div;
+};
+mapControl.addTo(map);

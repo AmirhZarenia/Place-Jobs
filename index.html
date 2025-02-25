@@ -79,7 +79,7 @@
 
                     <div id="dastebandi-box">
                         <button id="btn-daste" class="mt-3 btn-table" type="button" data-bs-toggle="dropdown">
-                            دسته بندی ها
+                            دسته‌بندی‌ها
                         </button>
                     </div>
 
@@ -224,41 +224,130 @@
                 <div id="box2" class="box2">
                     <input class="form-control input-place" style="margin-right: 12px; margin-bottom: 10px; width: 95%;"
                         type="text" placeholder="جستجوی دسته ها">
-                    <div class="accordion" id="myaco">
+                    <div class="accordion" id="myaco8">
+
                         <div class="card ">
-                            <div class="card-header">
-                                <button class="text-end dropdown-toggle" id="btn-col1" data-bs-toggle="collapse"
+                            <div class=" card-header">
+                                <button class="text-end btn-col1" id="btn-col1" data-bs-toggle="collapse"
                                     data-bs-target="#mycol1">
                                     ورزشی
+                                    <i id="icon-col1" class="fa fa-caret-left btn-col11" aria-hidden="true"></i>
                                 </button>
                             </div>
-                            <div class="collapse" id="mycol1" data-bs-parent="#myaco">
+                            <div class="collapse col-show1" id="mycol1" data-bs-parent="#myaco">
                                 <div class="card-body">
-                                    <button class="text-end">فوتبال</button>
-                                    <br>
-                                    <button class="text-end">والیبال</button>
-                                    <br>
-                                    <button class="text-end">شنا</button>
-                                    <br>
+
+
+                                    <button class="text-end footbal" id="footbal" data-bs-toggle="collapse"
+                                        data-bs-target="#footbal1">فوتبال <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button>
+
+                                    <div class="collapse footbal-show" id="footbal1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">مسی</button>
+                                            <br>
+                                            <button class="text-end">سوارز</button>
+                                            <br>
+                                            <button class="text-end">نیمار</button>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <button class="text-end volyball" id="volyball" data-bs-toggle="collapse"
+                                        data-bs-target="#volyball1">والیبال <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse volyball-show" id="volyball1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">پلیر 1</button>
+                                            <br>
+                                            <button class="text-end">پلیر 2</button>
+                                            <br>
+                                            <button class="text-end">پلیر 3</button>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <button class="text-end swim" id="swim" data-bs-toggle="collapse"
+                                        data-bs-target="#swim1">شنا <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse swim-show" id="swim1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">پلیر 1</button>
+                                            <br>
+                                            <button class="text-end">پلیر 2</button>
+                                            <br>
+                                            <button class="text-end">پلیر 3</button>
+                                        </div>
+                                    </div>
+
+
                                     <button class="text-end">همه مکان های ورزشی</button>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-header">
-                                <button class="text-end dropdown-toggle" id="btn-col2" data-bs-toggle="collapse"
-                                    data-bs-target="#mycol2">رستوران </button>
+                                <button class="text-end btn-col2" id="btn-col2" data-bs-toggle="collapse"
+                                    data-bs-target="#mycol2">رستوران <i id="icon-col2"
+                                        class="fa fa-caret-left btn-col22" aria-hidden="true"></i></button>
                             </div>
-                            <div class="collapse" id="mycol2" data-bs-parent="#myaco">
+                            <div class="collapse col-show2" id="mycol2" data-bs-parent="#myaco">
                                 <div class="card-body">
-                                    <button class="text-end">غذای دریای</button>
-                                    <br>
-                                    <button class="text-end">شاندیز</button>
-                                    <br>
-                                    <button class="text-end">پرنده آبی</button>
-                                    <br>
-                                    <button class="text-end">پیتزا پینو پینو</button>
-                                    <br>
+
+
+                                    <button class="text-end footbal" id="footbal" data-bs-toggle="collapse"
+                                        data-bs-target="#footbal1">پیتزا <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse footbal-show" id="footbal1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">گوشت و قارچ</button>
+                                            <br>
+                                            <button class="text-end">پپرونی</button>
+                                            <br>
+                                            <button class="text-end">مخصوص</button>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="text-end volyball" id="volyball" data-bs-toggle="collapse"
+                                        data-bs-target="#volyball1">فست فودی <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse volyball-show" id="volyball1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">فلافل</button>
+                                            <br>
+                                            <button class="text-end">هات داگ</button>
+                                            <br>
+                                            <button class="text-end">بندری</button>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="text-end swim" id="swim" data-bs-toggle="collapse"
+                                        data-bs-target="#swim1">غذای دریایی <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse swim-show" id="swim1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">ماهی </button>
+                                            <br>
+                                            <button class="text-end">میگو</button>
+                                            <br>
+                                            <button class="text-end">خرچنک</button>
+                                        </div>
+                                    </div>
+
+
+
                                     <button class="text-end">همه مکان های رستوران</button>
                                 </div>
                             </div>
@@ -266,19 +355,59 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <button class="text-end dropdown-toggle" id="btn-col3" data-bs-toggle="collapse"
-                                    data-bs-target="#mycol3">کافه </button>
+                                <button class="text-end btn-col3" id="btn-col3" data-bs-toggle="collapse"
+                                    data-bs-target="#mycol3">کافه <i id="icon-col3" class="fa fa-caret-left btn-col33"
+                                        aria-hidden="true"></i></button>
                             </div>
-                            <div class="collapse" id="mycol3" data-bs-parent="#myaco">
+                            <div class="collapse col-show3" id="mycol3" data-bs-parent="#myaco">
                                 <div class="card-body">
-                                    <button class="text-end">کافه 1</button>
-                                    <br>
-                                    <button class="text-end">کافه 2</button>
-                                    <br>
-                                    <button class="text-end">کافه 3</button>
-                                    <br>
-                                    <button class="text-end">کافه 4</button>
-                                    <br>
+
+
+                                    <button class="text-end footbal" id="footbal" data-bs-toggle="collapse"
+                                        data-bs-target="#footbal1">پیتزا <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse footbal-show" id="footbal1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">گوشت و قارچ</button>
+                                            <br>
+                                            <button class="text-end">پپرونی</button>
+                                            <br>
+                                            <button class="text-end">مخصوص</button>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="text-end volyball" id="volyball" data-bs-toggle="collapse"
+                                        data-bs-target="#volyball1">فست فودی <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse volyball-show" id="volyball1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">فلافل</button>
+                                            <br>
+                                            <button class="text-end">هات داگ</button>
+                                            <br>
+                                            <button class="text-end">بندری</button>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="text-end swim" id="swim" data-bs-toggle="collapse"
+                                        data-bs-target="#swim1">غذای دریایی <i class="fa fa-caret-left"
+                                            aria-hidden="true"></i></button></button>
+
+                                    <div class="collapse swim-show" id="swim1" data-bs-parent="#myaco">
+                                        <div class="card-body">
+                                            <button class="text-end">ماهی </button>
+                                            <br>
+                                            <button class="text-end">میگو</button>
+                                            <br>
+                                            <button class="text-end">خرچنک</button>
+                                        </div>
+                                    </div>
+
+
                                     <button class="text-end">همه مکان های کافه </button>
                                 </div>
                             </div>

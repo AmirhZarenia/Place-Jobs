@@ -182,7 +182,6 @@
 
 #map {
     height: 550px;
-    margin: 10px;
 }
 
 .input-place::placeholder {
@@ -241,6 +240,7 @@
     border-radius: 5px;
 }
 
+
 .card-header button {
     direction: rtl;
     margin-top: 5px;
@@ -256,6 +256,23 @@
 
 .active {
     background-color: rgba(1, 241, 233, 0.986);
+}
+
+
+#map-control {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#my-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -317,7 +334,7 @@
 
     .daste {
         font-size: 0.7rem;
-        padding: 3px 4px;
+        padding: 5px 4px;
     }
 }
 
